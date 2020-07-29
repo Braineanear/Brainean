@@ -1913,6 +1913,11 @@ hr {
   background: #7b40c0;
 }
 
+.visit-blocks {
+  justify-content: center;
+  align-items: center;
+}
+
 .visit-area .single-visited {
   margin-bottom: 30px;
 }
@@ -1921,13 +1926,28 @@ hr {
   position: relative;
 }
 
-.visit-area .single-visited .visited-img img {
-  width: 100%;
+.visit-area .single-visited .visited-img:before{
+    content: "";
+    display: block;
+    width: 100%;
+    padding-top: 138.55721393%;
+}
+
+.visit-area .single-visited .visited-img video {
+  object-fit: cover;
+    height: 100%;
+    object-position: center center;
+        position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .visit-area .single-visited .visited-cap {
   position: absolute;
-  bottom: 30px;
+  bottom: 25px;
   left: 0;
   background: #fff;
   width: 80%;
